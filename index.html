@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenqi Chen - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publications">Publications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="about">
+        <div class="hero-container fade-in">
+            <div class="hero-profile-col">
+                <div class="photo-name-wrapper">
+                    <img src="assets/profile.jpg" alt="Wenqi Chen" class="profile-photo">
+                    <h1>
+                        <span>Wenqi</span>
+                        <span>Chen</span>
+                        <span class="chinese-name">陈文琦</span>
+                    </h1>
+                </div>
+                <div class="contact-info">
+                    <a href="#" id="copy-email" title="Click to copy"><i class="fas fa-envelope"></i> <span id="email-text">Contact Me</span></a>
+                    <a href="https://scholar.google.com/citations?user=v7Gd8tUAAAAJ&hl=zh-CN" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/wenqi-chen-19472b323/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-bio-col">
+                <h2 class="subtitle">Powered by curiosity, coffee & occasional GPUs.</h2>
+                <p class="bio">
+                    Hello:) I am an incoming Ph.D. student at HKUST, advised by <a href="https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo" target="_blank">Prof. <strong>Yike Guo</strong></a>. During my time as a Research Assistant in <a href="https://pair-lab.ai/" target="_blank">PAIR Lab</a> at Peking University, I was advised by <a href="https://yangyaodong.com/" target="_blank">Prof. <strong>Yaodong Yang</strong></a>, where I explored methods to mitigate deceptive alignment. I also contributed to the <a href="https://github.com/PKU-Alignment/align-anything" target="_blank"><em>Align-Anything</em></a> framework for post-training and value alignment. I am passionate about building secure and reliable AI systems, focusing on <strong>Reinforcement Learning, AI Alignment & Safety</strong>.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="education" class="section">
+            <div class="container fade-in">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Expected Fall 2026</div>
+                        <div class="timeline-content">
+                            <h3>The Hong Kong University of Science and Technology (HKUST)</h3>
+                            <p class="department">Incoming Ph.D. Student | Department of Computer Science and Engineering (CSE)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">August 2022 - Present</div>
+                        <div class="timeline-content">
+                            <h3>University of Electronic Science and Technology of China (UESTC)</h3>
+                            <p class="department">Bachelor's Degree in Progress | School of Information and Software Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="publications" class="section">
+            <div class="container fade-in">
+                <h2 class="section-title">Publications</h2>
+                <ul class="pub-list">
+                    <li>
+                        <strong>Learn from Your Mistakes: Tree-like Self-Play for Secure Code LLMS.</strong><br>
+                        <u>Wenqi Chen</u>, Ziyan Zhang, Bing Wang, Lin Liu, Hengheng Zhang, Zhengsu Chen. Proceedings of the 43rd International Conference on Machine Learning (ICML), 2026.
+                    </li>
+                    <li>
+                        <strong>Position: Preparing for AI Systems That Deceive Developers.</strong><br>
+                        Isabella Duan, Xudong Pan, Yawen Duan, Adam Gleave, Ranjie Duan, Chaochao Lu, Naying Hu, Sören Mindermann, Dongrui Liu, Jie Fu, Xudong Guo, Chen Zheng, <u>Wenqi Chen</u>, et al. Proceedings of the 43rd International Conference on Machine Learning (ICML), 2026.
+                    </li>
+                    <li>
+                        <strong>Dof: A diffusion factorization framework for offline multi-agent reinforcement learning.</strong><br>
+                        Li, Chao, Ziwei Deng, Chenxing Lin, <u>Wenqi Chen</u>, Yongquan Fu, Weiquan Liu, Chenglu Wen, Cheng Wang, Siqi Shen. ICLR 2025.
+                    </li>
+                    <li>
+                        <strong>Align anything: Training all-modality models to follow instructions with language feedback.</strong><br>
+                        Ji, Jiaming, Jiayi Zhou, Hantao Lou, Boyuan Chen, Donghai Hong, Xuyao Wang, <u>Wenqi Chen</u> ... & Yaodong Yang. arXiv preprint arXiv:2412.15838 (2024).
+                    </li>
+                    <li>
+                        <strong>Mitigating deceptive alignment via self-monitoring.</strong><br>
+                        Ji, Jiaming*, <u>Wenqi Chen*</u>, Kaile Wang, Donghai Hong, Sitong Fang, Boyuan Chen, Jiayi Zhou, Juntao Dai, Sirui Han, Yike Guo, Yaodong Yang. arXiv preprint arXiv:2505.18807 (2025).
+                    </li>
+                    <li>
+                        <strong>Generative RLHF-V: Learning Principles from Multi-modal Human Preference.</strong><br>
+                        Zhou, Jiayi*, Jiaming Ji*, Boyuan Chen, Jiapeng Sun, <u>Wenqi Chen</u>, Donghai Hong, Sirui Han, Yike Guo, Yaodong Yang. NeurIPS 2025.
+                    </li>
+                    <li>
+                        <strong>InterMT: Multi-Turn Interleaved Preference Alignment with Human Feedback.</strong><br>
+                        Chen, Boyuan*, Donghai Hong*, Jiaming Ji*, Jiacheng Zheng, Bowen Dong, Jiayi Zhou, Kaile Wang, Juntao Dai, Xuyao Wang, <u>Wenqi Chen</u>, ..., Yike Guo, Yaodong Yang. NeurIPS 2025 <em>Spotlight</em>.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; <span id="year"></span> Wenqi Chen. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

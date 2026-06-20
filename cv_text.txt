@@ -1,0 +1,70 @@
+WENQI CHEN
+wqchen1024 [at] gmail [dot] com
+(+86) 18876290529
+No. 4, Section 2, North Jianshe Road, Chengdu, Sichuan, P .R.China, 610054
+EDUCATION
+The Hong Kong University of Science and Technology (HKUST)Expected Fall 2026
+Department of Computer Science and Engineering (CSE)
+Incoming Ph.D. Student
+University of Electronic Science and Technology of China (UESTC)August 2022 - Present
+School of Information and Software Engineering
+Bachelor’s degree in progress
+Key Courses:Calculus, Linear Algebra, Numerical Analysis, Computer Simulation, Operating Systems,
+Data Structures and Design, Computer Organization Principles
+Current GPA: 3.91/4.00|Weight Average:87.1/100
+RESEARCH EXPERIENCE
+HKGAI, The Hong Kong University of Science and TechnologyJune 2024 - January 2025
+Research Collaborator
+Topic:Post-training Value Alignment for Regional Sovereign LLM (HKGAI-V1)
+– Spearheaded the construction of region-specific value datasets and optimized data mixtures using
+theAlign-Anythingframework, ensuring compliance with Hong Kong’s safety standards.
+– Implemented fine-grained LLF to upgrade reward modeling from scalar scoring to sequence gen-
+eration, effectively mitigating “safety refusals” and improving utility for administrative tasks.
+– The model is deployed in30+ government departmentsand featured in the2024 Policy Address.
+Presented technical innovations to NVIDIA CEO Jensen Huang and HKSAR officials.
+PAIR Lab, Institute for Artificial Intelligence, Peking UniversityJune 2024 - Present
+Research Intern
+Topic:AI Alignment in All-modality Models & Framework Development
+– Co-developedAlign-Anything, a widely-used cross-modal alignment framework with4.6k+ GitHub
+stars. Contributed to Learning from Language Feedback (LLF) algorithms and paper writing.
+– Constructed a 200k all-modality human preference dataset with fine-grained language feedback.
+The dataset has achieved46,800+ downloads, becoming a standard resource in the community.
+Topic:Mitigating Deceptive Alignment in Large Language Models
+– DevelopedCoT Monitor+, a mechanism embedding self-monitoring signals into Chain-of-Thought
+to intercept deceptive reasoning in real-time.
+– ConstructedDeceptionBench(180 scenarios) to evaluate 5 categories of deceptive behaviors. Ex-
+periments demonstrated a43.8% reductionin deception while preserving task accuracy.– Modeled mitigation as constrained RL to bridge the evaluation-deployment gap. The interdisci-
+plinary analysis on human perception of deception is under review atNature Human Behaviour.
+PUBLICATION
+–Wenqi Chen, Ziyan Zhang, Bing Wang, Lin Liu, Hengheng Zhang, Zhengsu Chen. “Learn from
+Your Mistakes: Tree-like Self-Play for Secure Code LLMS.”Proceedings of the 43rd International
+Conference on Machine Learning (ICML), 2026.
+– Isabella Duan, Xudong Pan, Yawen Duan, Adam Gleave, Ranjie Duan, Chaochao Lu, Naying Hu,
+S¨oren Mindermann, Dongrui Liu, Jie Fu, Xudong Guo, Chen Zheng,Wenqi Chen, Jianfeng Cao,
+Geng Hong, Brian Tse, Xia Hu, Min Yang, Yang Zhang, Xiaojian Li, Peng Xu, Tianxing He, Jiarun
+Dai, Yinpeng Dong. ”Position: Preparing for AI Systems That Deceive Developers.”Proceedings
+of the 43rd International Conference on Machine Learning (ICML), 2026.
+– Li, Chao, Ziwei Deng, Chenxing Lin,Wenqi Chen, Yongquan Fu, Weiquan Liu, Chenglu Wen,
+Cheng Wang, Siqi Shen. ”Dof: A diffusion factorization framework for offline multi-agent rein-
+forcement learning.” ICLR 2025.
+– Ji, Jiaming, Jiayi Zhou, Hantao Lou, Boyuan Chen, Donghai Hong, Xuyao Wang,Wenqi Chen
+... & Yaodong Yang. ”Align anything: Training all-modality models to follow instructions with
+language feedback.” arXiv preprint arXiv:2412.15838 (2024).
+– Ji, Jiaming*,Wenqi Chen*, Kaile Wang, Donghai Hong, Sitong Fang, Boyuan Chen, Jiayi Zhou,
+Juntao Dai, Sirui Han, Yike Guo, Yaodong Yang. ”Mitigating deceptive alignment via self-monitoring.”
+arXiv preprint arXiv:2505.18807 (2025).
+– Zhou, Jiayi*, Jiaming Ji*, Boyuan Chen, Jiapeng Sun,Wenqi Chen, Donghai Hong, Sirui Han,
+Yike Guo, Yaodong Yang. ”Generative RLHF-V: Learning Principles from Multi-modal Human
+Preference.” NeurIPS 2025.
+– Chen, Boyuan*, Donghai Hong*, Jiaming Ji*, Jiacheng Zheng, Bowen Dong, Jiayi Zhou, Kaile
+Wang, Juntao Dai, Xuyao Wang,Wenqi Chen, ..., Yike Guo, Yaodong Yang. ”InterMT: Multi-Turn
+Interleaved Preference Alignment with Human Feedback.” NeurIPS 2025Spotlight.
+PRACTICAL SERVICE
+Chain Era Student Studio, UESTCOctober 2023 - Present
+Vice Chairman&Head of AI Division
+Managed competitions, research, and daily affairs of the studio.
+Led recruitment and knowledge sharing sessions for the machine learning division.
+HONORS&AWARDS
+UESTC Excellent Student Scholarship(2022-2023-2024)
+Second Prize, Sichuan Province College Student Computer Design Competition(2024)
+National Third Prize, China Collegiate Computing Contest - Network Technology Challenge.(2025)
