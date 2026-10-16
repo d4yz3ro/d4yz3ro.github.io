@@ -9,6 +9,8 @@
     --font-heading: 'Playfair Display', serif;
     --font-body: Georgia, 'Times New Roman', serif;
     --transition: all 0.3s ease;
+    --page-width: 1040px;
+    --page-gutter: clamp(1.25rem, 4vw, 3rem);
 }
 
 [data-theme="dark"] {
@@ -34,6 +36,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
 }
 
 body {
@@ -41,7 +44,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.6;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 0.02em;
     overflow-x: hidden;
 }
@@ -61,10 +64,10 @@ ul {
 }
 
 .container {
-    max-width: 760px;
+    max-width: var(--page-width);
     width: 100%;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 var(--page-gutter);
 }
 
 /* Navbar */
@@ -81,10 +84,10 @@ ul {
 }
 
 .nav-container {
-    max-width: 760px;
+    max-width: var(--page-width);
     width: 100%;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 var(--page-gutter);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,24 +135,24 @@ ul {
 
 /* Hero Section */
 .hero {
-    padding: 100px 0 2rem 0;
+    padding: 136px 0 3rem;
     display: flex;
     align-items: center;
 }
 
 .hero-container {
-    max-width: 760px;
+    max-width: var(--page-width);
     width: 100%;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 var(--page-gutter);
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: clamp(2rem, 5vw, 4rem);
 }
 
 .hero-profile-col {
     flex-shrink: 0;
-    width: 240px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -158,12 +161,13 @@ ul {
 .photo-name-wrapper {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1.5rem;
 }
 
 .profile-photo {
-    width: 110px;
-    height: 135px;
+    width: 180px;
+    height: 220px;
+    flex-shrink: 0;
     border-radius: 4px;
     object-fit: cover;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
@@ -171,6 +175,7 @@ ul {
 
 .hero-bio-col {
     flex: 1;
+    min-width: 0;
 }
 
 .chinese-name {
@@ -185,9 +190,9 @@ ul {
     flex-direction: column;
     justify-content: center;
     gap: 1.2rem;
-    height: 135px;
+    min-height: 220px;
     font-family: var(--font-heading);
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--text-main);
     line-height: 1;
@@ -205,11 +210,16 @@ ul {
 }
 
 .hero-bio-col .bio {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    line-height: 1.8;
     color: var(--text-muted);
     margin-bottom: 0;
-    text-align: justify;
-    hyphens: auto;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.hero-bio-col .bio + .bio {
+    margin-top: 1rem;
 }
 
 .contact-info {
@@ -235,7 +245,7 @@ ul {
 
 /* General Sections */
 .section {
-    padding: 2rem 0;
+    padding: 2.75rem 0;
 }
 
 .bg-light {
@@ -244,8 +254,8 @@ ul {
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 2.25rem;
     color: var(--text-main);
     position: relative;
     display: inline-block;
@@ -267,11 +277,18 @@ ul {
 }
 
 .timeline-item {
-    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 2rem;
+    padding-bottom: 1.75rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .timeline-item:last-child {
     margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
 }
 
 .timeline-date {
@@ -279,13 +296,13 @@ ul {
     color: var(--accent-color);
     font-weight: 600;
     margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
 }
 
 .timeline-content h3 {
     font-family: var(--font-body);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -308,8 +325,8 @@ ul {
 }
 
 .timeline-content p {
-    text-align: justify;
-    hyphens: auto;
+    text-align: left;
+    overflow-wrap: break-word;
 }
 
 /* Experience Cards */
@@ -383,23 +400,19 @@ ul {
     gap: 1.5rem;
 }
 
-.pub-list:hover li {
-    opacity: 0.6;
-}
-
 .pub-list li {
-    margin-bottom: 1.5rem;
-    text-align: justify;
-    hyphens: auto;
+    margin-bottom: 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+    overflow-wrap: break-word;
     transition: all 0.3s ease;
-    border-left: 2px solid transparent;
-    padding-left: 0;
+    line-height: 1.8;
 }
 
-.pub-list li:hover {
-    opacity: 1;
-    border-left: 2px solid var(--accent-color);
-    padding-left: 1rem;
+.pub-list li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
 }
 
 .pub-list li strong {
@@ -526,32 +539,103 @@ footer p {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .hero-container {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding-top: 4rem;
+        align-items: flex-start;
+        gap: 2rem;
     }
 
-    .hero-text h1 {
-        font-size: 3rem;
+    .hero-profile-col {
+        width: 260px;
+    }
+
+    .photo-name-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-profile-col h1 {
+        min-height: 0;
+        gap: 0.65rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        padding: 108px 0 1.5rem;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 2.25rem;
+    }
+
+    .hero-profile-col {
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .photo-name-wrapper {
+        flex-direction: row;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 184px;
+    }
+
+    .hero-profile-col h1 {
+        font-size: 1.8rem;
+        gap: 1rem;
     }
 
     .contact-info {
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+        font-size: 0.8rem;
+    }
+
+    .contact-info a {
+        gap: 0.4rem;
     }
 
     .nav-links {
-        display: none; /* simple mobile fallback */
+        gap: clamp(0.75rem, 3vw, 1.5rem);
     }
 
-    .grid-2 {
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+
+    .timeline-item {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 0.35rem;
     }
 
-    .card-header {
-        flex-direction: column;
-        gap: 0.5rem;
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        transition: none !important;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transform: none;
     }
 }
